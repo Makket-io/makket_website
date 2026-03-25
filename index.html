@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAKKET — Discover Trusted Sellers in Nigerian Markets</title>
+  <meta name="description" content="MAKKET is the digital discovery and trust layer for Africa's physical markets. Search products, find verified sellers, and shop smarter — all from your phone.">
+  <meta name="keywords" content="Nigerian markets, Balogun market, Mile 12, Alaba international, buy from market, find sellers, verified market sellers, MAKKET, Lagos market app">
+  <meta property="og:title" content="MAKKET — Discover Trusted Sellers in Nigerian Markets">
+  <meta property="og:description" content="Search. Discover. Trust. The smartest way to shop Nigerian markets without the stress.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://makket.io">
+  <meta property="og:image" content="https://makket.io/assets/MAKKET-Header-Teal-Transparent_logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MAKKET — Discover Trusted Sellers in Nigerian Markets">
+  <meta name="twitter:description" content="Search. Discover. Trust. The smartest way to shop Nigerian markets without the stress.">
+  <meta name="theme-color" content="#1B5E20">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/apple-touch-icon.png">
+  <link rel="canonical" href="https://makket.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "MAKKET",
+    "url": "https://makket.io",
+    "description": "Digital discovery and trust platform for Nigerian physical markets. Search products, find verified sellers, and shop smarter.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "NGN"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "MAKKET",
+      "url": "https://makket.io"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav-logo" aria-label="MAKKET home">
+            <img src="assets/MAKKET-Header-Teal-Transparent_logo.png" alt="MAKKET" height="36">
+          </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#features">Features</a>
+          <a href="#categories">Markets</a>
+          <a href="#for-sellers">For Sellers</a>
+          <a href="#trust">Trust &amp; Safety</a>
+        </div>
+        <div class="nav-cta">
+          <a href="#waitlist" class="btn btn-primary btn-sm">Get Early Access</a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#how-it-works">How It Works</a>
+    <a href="#features">Features</a>
+    <a href="#categories">Markets</a>
+    <a href="#for-sellers">For Sellers</a>
+    <a href="#trust">Trust &amp; Safety</a>
+    <a href="#waitlist" class="btn btn-primary" style="text-align:center;margin-top:8px;">Get Early Access</a>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <div class="pulse"></div>
+            Launching 2026 &mdash; Lagos &bull; Abuja &bull; Port Harcourt
+          </div>
+
+          <h1>Discover trusted sellers<br><span>in Nigerian markets</span></h1>
+
+          <p class="hero-description">
+            Search. Discover. Trust. MAKKET is the digital layer that makes Africa's physical markets searchable, trustworthy, and accessible &mdash; right from your phone.
+          </p>
+
+          <!-- Dual-Role Toggle -->
+          <div class="role-toggle" id="roleToggle">
+            <button class="role-btn active" data-role="buyer">I'm looking to buy</button>
+            <button class="role-btn" data-role="seller">I sell in the market</button>
+          </div>
+
+          <!-- Hero Waitlist Form -->
+          <form class="hero-form" id="heroForm">
+            <div class="form-row">
+              <div class="input-group">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <input type="email" placeholder="Your email address" required id="heroEmail">
+              </div>
+              <div class="input-group phone-group">
+                <span class="phone-prefix">+234</span>
+                <input type="tel" placeholder="Phone number" id="heroPhone" pattern="[0-9]{10,11}">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group city-select">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <select id="heroCity">
+                  <option value="">Select your city</option>
+                  <option value="lagos">Lagos</option>
+                  <option value="abuja">Abuja</option>
+                  <option value="port-harcourt">Port Harcourt</option>
+                  <option value="enugu">Enugu</option>
+                  <option value="ibadan">Ibadan</option>
+                  <option value="kano">Kano</option>
+                  <option value="aba">Aba</option>
+                  <option value="onitsha">Onitsha</option>
+                  <option value="kaduna">Kaduna</option>
+                  <option value="owerri">Owerri</option>
+                  <option value="benin">Benin City</option>
+                  <option value="warri">Warri</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-secondary btn-lg hero-submit">
+                Join the Waitlist
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+            <p class="form-note">Free to join. No spam. We respect your data.</p>
+          </form>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="number" data-count="600">0</div>
+              <div class="label">Markets Mapped</div>
+            </div>
+            <div class="hero-stat">
+              <div class="number" data-count="13">0</div>
+              <div class="label">Product Categories</div>
+            </div>
+            <div class="hero-stat">
+              <div class="number" data-count="3">0</div>
+              <div class="label">Launch Cities</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-phone">
+            <div class="hero-phone-screen">
+              <div class="phone-header">
+                <div class="phone-status-bar">
+                  <span>9:41</span>
+                  <span class="status-icons">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><rect x="2" y="6" width="3" height="12" rx="1"/><rect x="7" y="4" width="3" height="14" rx="1"/><rect x="12" y="8" width="3" height="10" rx="1"/><rect x="17" y="2" width="3" height="16" rx="1"/></svg>
+                    <svg width="18" height="14" viewBox="0 0 24 14" fill="white"><rect x="0" y="1" width="20" height="12" rx="2" stroke="white" stroke-width="1.5" fill="none"/><rect x="2" y="3" width="12" height="8" rx="1"/><rect x="21" y="4" width="2" height="6" rx="1"/></svg>
+                  </span>
+                </div>
+                <div class="phone-logo">MAKKET</div>
+                <div class="phone-search">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                  What are you looking for?
+                </div>
+              </div>
+              <div class="phone-body">
+                <div class="phone-categories">
+                  <span class="phone-cat active">All</span>
+                  <span class="phone-cat">Food</span>
+                  <span class="phone-cat">Fabrics</span>
+                  <span class="phone-cat">Electronics</span>
+                </div>
+                <p class="phone-section-title">Nearby Sellers</p>
+                <div class="phone-vendor-card">
+                  <div class="vendor-avatar">AM</div>
+                  <div class="vendor-info">
+                    <h5>Alhaji Musa Foods <span class="verified-badge">&#10003;</span></h5>
+                    <div class="vendor-market">Mile 12 Market &bull; 2.3km</div>
+                    <div class="vendor-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 &middot; 47 reviews</div>
+                  </div>
+                  <div class="vendor-action">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                  </div>
+                </div>
+                <div class="phone-vendor-card">
+                  <div class="vendor-avatar" style="background:#FF8F00;">NF</div>
+                  <div class="vendor-info">
+                    <h5>Ngozi Fabrics <span class="premium-badge">&#9733;</span></h5>
+                    <div class="vendor-market">Balogun Market &bull; 4.1km</div>
+                    <div class="vendor-rating">&#9733;&#9733;&#9733;&#9733;&#9734; 4.5 &middot; 32 reviews</div>
+                  </div>
+                  <div class="vendor-action">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                  </div>
+                </div>
+                <div class="phone-vendor-card">
+                  <div class="vendor-avatar" style="background:#00897B;">KE</div>
+                  <div class="vendor-info">
+                    <h5>Kalu Electronics <span class="verified-badge">&#10003;</span></h5>
+                    <div class="vendor-market">Alaba Int'l &bull; 6.7km</div>
+                    <div class="vendor-rating">&#9733;&#9733;&#9733;&#9733;&#9734; 4.3 &middot; 19 reviews</div>
+                  </div>
+                  <div class="vendor-action">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                  </div>
+                </div>
+                <div class="phone-nav-bar">
+                  <div class="phone-nav-item active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                    <span>Home</span>
+                  </div>
+                  <div class="phone-nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    <span>Search</span>
+                  </div>
+                  <div class="phone-nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+                    <span>Saved</span>
+                  </div>
+                  <div class="phone-nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Profile</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Cards -->
+          <div class="hero-float-card card-1">
+            <div class="float-card-row">
+              <span class="float-icon green-bg">&#10003;</span>
+              <div>
+                <div class="float-card-text">Verified Seller</div>
+                <div class="float-card-sub">Field-agent confirmed</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-card card-2">
+            <div class="float-card-row">
+              <span class="float-icon orange-bg">&#128205;</span>
+              <div>
+                <div class="float-card-text">3 Markets Nearby</div>
+                <div class="float-card-sub">Within 5km radius</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-card card-3">
+            <div class="float-card-row">
+              <span class="float-icon gold-bg">&#9733;</span>
+              <div>
+                <div class="float-card-text">4.8 Average Rating</div>
+                <div class="float-card-sub">47 buyer reviews</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRENDING SEARCHES ====== -->
+  <section class="trending" id="trending">
+    <div class="container text-center">
+      <span class="section-label">Trending Now</span>
+      <h2 class="section-title">What Nigerians are searching for</h2>
+      <p class="section-subtitle">From everyday staples to wholesale materials &mdash; see what real buyers want from their markets.</p>
+      <div class="trending-scroll">
+        <div class="trending-track">
+          <span class="trending-chip">&#127813; Fresh Tomatoes</span>
+          <span class="trending-chip">&#129385; Ankara Fabrics</span>
+          <span class="trending-chip">&#128241; Phone Accessories</span>
+          <span class="trending-chip">&#127834; Bags of Rice (50kg)</span>
+          <span class="trending-chip">&#128090; Aso Oke</span>
+          <span class="trending-chip">&#128295; Toyota Spare Parts</span>
+          <span class="trending-chip">&#127830; Frozen Fish</span>
+          <span class="trending-chip">&#128084; Ready-Made Clothes</span>
+          <span class="trending-chip">&#128187; Fairly Used Laptops</span>
+          <span class="trending-chip">&#127798; Pepper &amp; Onions</span>
+          <span class="trending-chip">&#128092; Swiss Lace</span>
+          <span class="trending-chip">&#128268; Cement &amp; Iron Rods</span>
+          <span class="trending-chip">&#129507; Leather Bags (Aba-made)</span>
+          <span class="trending-chip">&#127839; Garri &amp; Beans</span>
+          <span class="trending-chip">&#128302; Braiding Hair</span>
+          <span class="trending-chip">&#127968; Standing Fans</span>
+          <span class="trending-chip">&#128510; Body Cream &amp; Perfumes</span>
+          <span class="trending-chip">&#128250; Smart TVs</span>
+          <span class="trending-chip">&#9981;&#65039; Industrial Cookers</span>
+          <span class="trending-chip">&#128718;&#65039; Children's School Shoes</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="trending-chip">&#127813; Fresh Tomatoes</span>
+          <span class="trending-chip">&#129385; Ankara Fabrics</span>
+          <span class="trending-chip">&#128241; Phone Accessories</span>
+          <span class="trending-chip">&#127834; Bags of Rice (50kg)</span>
+          <span class="trending-chip">&#128090; Aso Oke</span>
+          <span class="trending-chip">&#128295; Toyota Spare Parts</span>
+          <span class="trending-chip">&#127830; Frozen Fish</span>
+          <span class="trending-chip">&#128084; Ready-Made Clothes</span>
+          <span class="trending-chip">&#128187; Fairly Used Laptops</span>
+          <span class="trending-chip">&#127798; Pepper &amp; Onions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROBLEM ====== -->
+  <section class="problems" id="problems">
+    <div class="container text-center">
+      <span class="section-label">The Challenge</span>
+      <h2 class="section-title">Africa's biggest economy runs on trust you can't see</h2>
+      <p class="section-subtitle">Over 80% of commerce in Nigeria happens in physical markets. Yet there's no way to search, compare, or verify before you go.</p>
+
+      <div class="problems-grid">
+        <div class="problem-card reveal">
+          <div class="problem-icon">&#128663;</div>
+          <h3>Hours lost to traffic &amp; walking</h3>
+          <p>Buyers spend 2-4 hours per trip — battling traffic, hopping between stalls, comparing prices blindly, only to leave empty-handed.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon">&#128566;</div>
+          <h3>No visible trust signals</h3>
+          <p>There are no ratings, no reviews, no verification. You can't tell who's reliable until you've already paid — or been burned.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon">&#128269;</div>
+          <h3>Discovery depends on luck</h3>
+          <p>Finding the right seller means word-of-mouth, WhatsApp broadcasts, or physically walking market rows. There's no search engine for markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW IT WORKS ====== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container text-center">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-title">From search to seller in under 2 minutes</h2>
+      <p class="section-subtitle">MAKKET makes market shopping as easy as online shopping — but with the quality and prices only physical markets offer.</p>
+
+      <div class="steps-grid">
+        <div class="step-card step-1 reveal">
+          <div class="step-number">1</div>
+          <div class="step-icon">&#128270;</div>
+          <h3>Search for what you need</h3>
+          <p>Type any product — tomatoes, ankara, spare parts, cement. MAKKET searches across 600+ mapped markets instantly.</p>
+        </div>
+        <div class="step-card step-2 reveal">
+          <div class="step-number">2</div>
+          <div class="step-icon">&#9989;</div>
+          <h3>Discover verified sellers</h3>
+          <p>Browse real seller profiles with ratings, reviews, business photos, and field-verified badges. Compare before you commit.</p>
+        </div>
+        <div class="step-card step-3 reveal">
+          <div class="step-number">3</div>
+          <div class="step-icon">&#128222;</div>
+          <h3>Call, WhatsApp, or visit</h3>
+          <p>Reach out directly — no middleman, no platform fee. Arrange delivery, negotiate price, or visit the shop with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES ====== -->
+  <section class="features" id="features">
+    <div class="container text-center">
+      <span class="section-label">Platform Features</span>
+      <h2 class="section-title">Built for how Nigerians actually shop</h2>
+      <p class="section-subtitle">Every feature is designed for real market conditions — low bandwidth, mobile-first, and trust above everything.</p>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon green">&#128270;</div>
+          <h4>Intelligent Market Search</h4>
+          <p>Search by product name, category, market, or location. Smart autocomplete understands what you're looking for — even with typos.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green">&#128737;</div>
+          <h4>3-Tier Seller Verification</h4>
+          <p>Every seller goes through our verification pipeline — from phone confirmation to field-agent shop visits. Trust you can see.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon orange">&#127908;</div>
+          <h4>Voice Search <span class="coming-soon">Coming Soon</span></h4>
+          <p>Search by speaking in English or Pidgin. &ldquo;MAKKET, where I go buy tomato for cheap?&rdquo; — and it just works.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon teal">&#127759;</div>
+          <h4>600+ Markets Mapped</h4>
+          <p>We're mapping every major market in Nigeria — stall by stall, section by section. Find sellers by market name or distance from you.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon gold">&#11088;</div>
+          <h4>Community Ratings &amp; Reviews</h4>
+          <p>Real ratings from real buyers. One review per seller per 30 days — verified, moderated, and fraud-protected.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green">&#128222;</div>
+          <h4>Direct Seller Contact</h4>
+          <p>Tap to call or WhatsApp any seller from their profile. No commissions on contact, no platform gatekeeping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CATEGORIES ====== -->
+  <section class="categories" id="categories">
+    <div class="container text-center">
+      <span class="section-label">Explore</span>
+      <h2 class="section-title">Every market. Every category. One search.</h2>
+      <p class="section-subtitle">From fresh produce to industrial equipment &mdash; MAKKET covers the full spectrum of what Nigerian markets offer.</p>
+
+      <div class="categories-grid">
+        <div class="category-card reveal">
+          <div class="category-icon">&#127813;</div>
+          <h4>Food &amp; Produce</h4>
+          <p>Tomatoes, pepper, rice, fish, foodstuff</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#129385;</div>
+          <h4>Fabrics &amp; Textiles</h4>
+          <p>Ankara, lace, aso oke, adire, materials</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#128187;</div>
+          <h4>Electronics &amp; Gadgets</h4>
+          <p>Phones, laptops, accessories, TVs</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#128084;</div>
+          <h4>Fashion &amp; Clothing</h4>
+          <p>Ready-made, tailoring, shoes, bags</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#128295;</div>
+          <h4>Auto &amp; Spare Parts</h4>
+          <p>Vehicle parts, panels, accessories</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#128268;</div>
+          <h4>Building &amp; Construction</h4>
+          <p>Cement, iron rods, plumbing, tiles</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#127968;</div>
+          <h4>Home &amp; Appliances</h4>
+          <p>Furniture, generators, kitchen items</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#128302;</div>
+          <h4>Beauty &amp; Personal Care</h4>
+          <p>Cosmetics, hair, skincare, perfumes</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#129507;</div>
+          <h4>Leather &amp; Craft</h4>
+          <p>Aba-made bags, shoes, belts, wallets</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#127807;</div>
+          <h4>Agriculture &amp; Farm</h4>
+          <p>Seeds, fertilizer, tools, livestock feed</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#9881;&#65039;</div>
+          <h4>Industrial &amp; Machinery</h4>
+          <p>Generators, welding, tools, equipment</p>
+        </div>
+        <div class="category-card reveal">
+          <div class="category-icon">&#128218;</div>
+          <h4>Stationery &amp; Printing</h4>
+          <p>Office supplies, books, school items</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOR SELLERS ====== -->
+  <section class="for-sellers" id="for-sellers">
+    <div class="container">
+      <div class="sellers-content">
+        <div class="sellers-text text-center">
+          <span class="section-label">For Market Sellers</span>
+          <h2 class="section-title">Your stall is now searchable</h2>
+          <p class="section-subtitle" style="margin-bottom:32px;">Customers are searching for what you sell &mdash; right now. Get found, get trusted, sell more. No tech skills needed.</p>
+        </div>
+
+        <div class="seller-benefits-grid">
+          <div class="seller-benefit reveal">
+            <div class="sb-icon">&#128200;</div>
+            <h4>Get discovered by new buyers</h4>
+            <p>Buyers searching &ldquo;tomatoes near Mile 12&rdquo; or &ldquo;ankara in Balogun&rdquo; will find your shop &mdash; even if they've never been to your market.</p>
+          </div>
+          <div class="seller-benefit reveal">
+            <div class="sb-icon">&#128737;</div>
+            <h4>Earn a verification badge</h4>
+            <p>Our field agents visit your shop, verify your identity, and give you a trust badge that new customers recognize instantly.</p>
+          </div>
+          <div class="seller-benefit reveal">
+            <div class="sb-icon">&#11088;</div>
+            <h4>Build your reputation digitally</h4>
+            <p>Collect ratings and reviews from real buyers. A strong profile means repeat customers and referrals &mdash; beyond word of mouth.</p>
+          </div>
+          <div class="seller-benefit reveal">
+            <div class="sb-icon">&#128202;</div>
+            <h4>Track your business growth</h4>
+            <p>See how many buyers view your profile, how many call you, and which products get the most attention. Data-driven decisions.</p>
+          </div>
+          <div class="seller-benefit reveal">
+            <div class="sb-icon">&#128176;</div>
+            <h4>Free to list. Upgrade when ready.</h4>
+            <p>Listing on MAKKET costs nothing. When you're ready for priority placement and extra visibility, upgrade to Premium for &#8358;5,000/month.</p>
+          </div>
+          <div class="seller-benefit reveal">
+            <div class="sb-icon">&#129309;</div>
+            <h4>We set it up for you</h4>
+            <p>Don't want to do it yourself? Our field agents come to your shop, take photos, and create your profile on the spot. Done in 10 minutes.</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top:48px;">
+          <a href="#waitlist" class="btn btn-secondary btn-lg">Join as a Seller &mdash; It's Free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRUST ====== -->
+  <section class="trust" id="trust">
+    <div class="container text-center">
+      <span class="section-label">Trust &amp; Safety</span>
+      <h2 class="section-title">Trust isn't just a feature. It's our foundation.</h2>
+      <p class="section-subtitle">In Nigerian markets, trust is built through relationships and reputation. MAKKET makes that trust visible, portable, and scalable.</p>
+
+      <div class="trust-tiers">
+        <div class="trust-tier tier-basic reveal">
+          <div class="tier-header basic-header">
+            <div class="tier-badge-icon">&#128100;</div>
+            <h3>Listed</h3>
+            <p class="tier-desc">Basic market presence</p>
+          </div>
+          <ul class="tier-features">
+            <li>Phone number verified via OTP</li>
+            <li>Business name provided</li>
+            <li>Market location tagged</li>
+            <li>At least 1 product category</li>
+          </ul>
+          <div class="tier-signal">Trust signal: &ldquo;Listed on MAKKET&rdquo;</div>
+        </div>
+
+        <div class="trust-tier tier-verified reveal featured-tier">
+          <div class="tier-popular">Most Trusted</div>
+          <div class="tier-header verified-header">
+            <div class="tier-badge-icon">&#9989;</div>
+            <h3>Verified</h3>
+            <p class="tier-desc">Identity &amp; location confirmed</p>
+          </div>
+          <ul class="tier-features">
+            <li>Physical shop visited by field agent</li>
+            <li>Business photo verified</li>
+            <li>Identity confirmed (name + phone)</li>
+            <li>3+ products listed with photos</li>
+            <li>Market association membership (where applicable)</li>
+          </ul>
+          <div class="tier-signal">Trust signal: &ldquo;Verified by MAKKET&rdquo;</div>
+        </div>
+
+        <div class="trust-tier tier-premium reveal">
+          <div class="tier-header premium-header">
+            <div class="tier-badge-icon">&#127942;</div>
+            <h3>Premium</h3>
+            <p class="tier-desc">Proven track record</p>
+          </div>
+          <ul class="tier-features">
+            <li>Everything in Verified, plus:</li>
+            <li>3.5+ rating for 3 consecutive months</li>
+            <li>Response rate above 80%</li>
+            <li>At least 10 verified reviews</li>
+            <li>Gold badge &amp; priority search placement</li>
+          </ul>
+          <div class="tier-signal">Trust signal: &ldquo;Premium Seller&rdquo;</div>
+        </div>
+      </div>
+
+      <!-- Trust Pillars -->
+      <div class="trust-pillars">
+        <div class="trust-pillar reveal">
+          <div class="pillar-icon">&#128737;</div>
+          <h4>Field-Agent Verification</h4>
+          <p>Real humans visit real shops. No shortcuts.</p>
+        </div>
+        <div class="trust-pillar reveal">
+          <div class="pillar-icon">&#11088;</div>
+          <h4>Community-Powered Ratings</h4>
+          <p>Fraud-protected reviews from verified buyers.</p>
+        </div>
+        <div class="trust-pillar reveal">
+          <div class="pillar-icon">&#128274;</div>
+          <h4>Privacy by Default</h4>
+          <p>Phone numbers masked. Your data, your choice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container text-center">
+      <span class="section-label">Community Voices</span>
+      <h2 class="section-title">Early reactions from our community</h2>
+      <p class="section-subtitle">We asked buyers and sellers what they thought. Here's what they said.</p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-quote">
+            Every Saturday I waste half my day going from Balogun to Idumota looking for specific ankara. If I could search on my phone and find the right seller before I leave my house? That changes everything for me.
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">CA</div>
+            <div>
+              <div class="author-name">Chioma A.</div>
+              <div class="author-role">Buyer &bull; Lekki, Lagos</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-quote">
+            My shop is at the back of Mile 12. People who don't know me can't find me. If this app can bring new customers who search for tomatoes to my profile &mdash; that's free money. I'm in.
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#FF8F00;">AM</div>
+            <div>
+              <div class="author-name">Alhaji Musa I.</div>
+              <div class="author-role">Seller &bull; Mile 12 Market, Lagos</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-quote">
+            I once transferred money via WhatsApp to a market seller I found online. Never got my goods. If there was a platform where sellers are verified before I contact them? That's what I need.
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#00897B;">EO</div>
+            <div>
+              <div class="author-name">Emeka O.</div>
+              <div class="author-role">Buyer &bull; Wuse, Abuja</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA / WAITLIST ====== -->
+  <section class="cta-section" id="waitlist">
+    <div class="container text-center">
+      <span class="section-label cta-label">Join the Movement</span>
+      <h2>Be among the first to experience MAKKET</h2>
+      <p>Founding members get priority access, free seller verification, and exclusive early perks. Whether you buy or sell &mdash; the market is about to change.</p>
+
+      <!-- CTA Waitlist Form -->
+      <form class="cta-form" id="ctaForm">
+        <div class="cta-role-toggle" id="ctaRoleToggle">
+          <button type="button" class="cta-role active" data-role="buyer">&#128722; I'm a Buyer</button>
+          <button type="button" class="cta-role" data-role="seller">&#128176; I'm a Seller</button>
+        </div>
+        <div class="cta-form-fields">
+          <input type="email" placeholder="Email address" required id="ctaEmail">
+          <div class="cta-phone-row">
+            <span class="cta-phone-prefix">+234</span>
+            <input type="tel" placeholder="Phone number (optional)" id="ctaPhone">
+          </div>
+          <select id="ctaCity">
+            <option value="">Your city</option>
+            <option value="lagos">Lagos</option>
+            <option value="abuja">Abuja</option>
+            <option value="port-harcourt">Port Harcourt</option>
+            <option value="enugu">Enugu</option>
+            <option value="ibadan">Ibadan</option>
+            <option value="kano">Kano</option>
+            <option value="aba">Aba</option>
+            <option value="onitsha">Onitsha</option>
+            <option value="other">Other city</option>
+          </select>
+          <button type="submit" class="btn btn-secondary btn-lg cta-submit">
+            Get Early Access
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <p class="cta-note">No spam. Unsubscribe anytime. We respect your data.</p>
+      </form>
+
+      <div class="cta-perks">
+        <div class="cta-perk"><span>&#10003;</span> Priority launch access</div>
+        <div class="cta-perk"><span>&#10003;</span> Free seller verification</div>
+        <div class="cta-perk"><span>&#10003;</span> Founding member badge</div>
+        <div class="cta-perk"><span>&#10003;</span> Exclusive launch perks</div>
+      </div>
+
+      <div class="app-coming-soon">
+        <button class="app-btn disabled" disabled>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          App Store &mdash; Coming Soon
+        </button>
+        <button class="app-btn disabled" disabled>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5.31 0 .61.1.86.28L20.07 12l-.01.01-14.72 9.72c-.25.17-.55.27-.84.27-.83 0-1.5-.67-1.5-1.5z"/></svg>
+          Google Play &mdash; Coming Soon
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LAUNCH CITIES ====== -->
+  <section class="cities" id="cities">
+    <div class="container text-center">
+      <span class="section-label">Launch Cities</span>
+      <h2 class="section-title">Starting where the markets are</h2>
+      <p class="section-subtitle">We're launching city by city, market by market &mdash; building density before breadth.</p>
+
+      <div class="cities-grid">
+        <div class="city-badge"><span class="dot active"></span> Lagos <span class="city-tag">Phase 1</span></div>
+        <div class="city-badge"><span class="dot active"></span> Abuja <span class="city-tag">Phase 1</span></div>
+        <div class="city-badge"><span class="dot active"></span> Port Harcourt <span class="city-tag">Phase 1</span></div>
+        <div class="city-badge"><span class="dot upcoming"></span> Enugu</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Ibadan</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Kano</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Kaduna</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Aba</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Onitsha</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Owerri</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Warri</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Benin City</div>
+        <div class="city-badge"><span class="dot upcoming"></span> Asaba</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+              <img src="assets/MAKKET-Footer-White-Transparent.png" alt="MAKKET" height="32">
+            </div>
+          <p>The digital discovery and trust layer for Africa's physical markets. Search products, find verified sellers, and shop smarter.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter/X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#features">Features</a>
+          <a href="#categories">Market Categories</a>
+          <a href="#trust">Trust &amp; Safety</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About MAKKET</a>
+          <a href="#">Our Mission</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Help Centre</a>
+          <a href="#">Seller Support</a>
+          <a href="#">Report a Problem</a>
+          <a href="#">FAQs</a>
+          <a href="#for-sellers">For Sellers</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 MAKKET. All rights reserved. Built in Nigeria, for Nigerian markets.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <span class="toast-icon">&#9989;</span>
+      <span class="toast-text">You're on the list! We'll be in touch.</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
