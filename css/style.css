@@ -698,6 +698,7 @@ section#hero {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 52px;
 }
 
 .phone-categories {
@@ -829,8 +830,13 @@ section#hero {
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #eee;
-  padding: 6px 8px 10px;
+  padding: 8px 8px 16px;
   background-color: #fff;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .phone-nav-item {
