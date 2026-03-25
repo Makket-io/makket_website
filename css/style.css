@@ -225,7 +225,8 @@ a:hover {
   transition: all var(--transition-base);
 }
 
-.reveal.visible {
+.reveal.visible,
+.reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -387,6 +388,60 @@ nav {
   display: flex;
   gap: var(--spacing-xl);
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.nav-links a {
+  white-space: nowrap;
+  font-size: var(--font-size-small);
+}
+
+.nav-cta {
+  flex-shrink: 0;
+}
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.mobile-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-charcoal);
+  border-radius: 2px;
+  transition: all var(--transition-base);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 999;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.mobile-menu.open {
+  display: flex;
 }
 
 nav a {
@@ -581,6 +636,48 @@ section#hero {
 
 .hero-form {
   margin-bottom: var(--spacing-xl);
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  width: 18px;
+  height: 18px;
+  color: var(--color-gray);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.input-group input,
+.input-group select {
+  padding-left: 2.75rem;
+}
+
+.phone-group {
+  position: relative;
+}
+
+.phone-prefix {
+  position: absolute;
+  left: 1rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.phone-group input {
+  padding-left: 4rem;
+}
+
+.city-select select {
+  width: 100%;
 }
 
 .form-row {
@@ -1679,8 +1776,17 @@ footer {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
   z-index: 2000;
-  animation: slideUp 400ms ease-out;
   max-width: 300px;
+  opacity: 0;
+  transform: translateY(100px);
+  pointer-events: none;
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 @keyframes slideUp {
@@ -1770,11 +1876,12 @@ footer {
     padding: var(--spacing-md) 0;
   }
 
-  nav {
+  .nav-links,
+  .nav-cta {
     display: none;
   }
 
-  .hamburger {
+  .mobile-toggle {
     display: flex;
   }
 
@@ -1884,10 +1991,6 @@ footer {
   .hero-stats {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
-  }
-
-  nav {
-    display: none;
   }
 
   section {
