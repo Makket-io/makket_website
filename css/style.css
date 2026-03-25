@@ -1051,9 +1051,15 @@ section#problems {
 }
 
 .problem-icon {
-  font-size: 3rem;
-  margin-bottom: var(--spacing-md);
-  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(27, 94, 32, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
+  color: var(--color-deep-green);
 }
 
 .problem-card h3 {
@@ -1127,9 +1133,15 @@ section#how-it-works {
 }
 
 .step-card .step-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-md);
-  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(27, 94, 32, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
+  color: var(--color-deep-green);
 }
 
 .step-card h3 {
@@ -1176,10 +1188,19 @@ section#features {
 }
 
 .feature-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-md);
-  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
 }
+
+.feature-icon.green { background: rgba(27, 94, 32, 0.08); color: var(--color-deep-green); }
+.feature-icon.orange { background: rgba(255, 143, 0, 0.1); color: #FF8F00; }
+.feature-icon.teal { background: rgba(0, 137, 123, 0.1); color: #00897B; }
+.feature-icon.gold { background: rgba(255, 214, 0, 0.15); color: #F9A825; }
 
 .feature-card h4 {
   font-size: 1.1rem;
@@ -1239,9 +1260,15 @@ section#categories {
 }
 
 .category-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(27, 94, 32, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-sm);
+  color: var(--color-deep-green);
 }
 
 .category-card h4 {
@@ -1303,9 +1330,15 @@ section.for-sellers {
 }
 
 .sb-icon {
-  font-size: 2.5rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(255, 143, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: var(--spacing-md);
-  display: block;
+  color: #FF8F00;
 }
 
 .seller-benefit h4 {
@@ -1384,9 +1417,14 @@ section#trust {
 }
 
 .tier-badge-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-sm);
 }
 
 .tier-header h3 {
@@ -1452,9 +1490,15 @@ section#trust {
 }
 
 .pillar-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-md);
-  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(27, 94, 32, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
+  color: var(--color-deep-green);
 }
 
 .trust-pillar h4 {
