@@ -348,11 +348,16 @@ gridItems.forEach((item, index) => {
 const phoneMockup = document.querySelector('.hero-phone');
 
 if (phoneMockup) {
-  // Optional: Add subtle mouse-following animation
+  // Subtle mouse-following that preserves 3D perspective
   document.addEventListener('mousemove', (e) => {
-    const mouseX = (e.clientX / window.innerWidth) * 10 - 5;
-    const mouseY = (e.clientY / window.innerHeight) * 10 - 5;
-    phoneMockup.style.transform = `translateY(${mouseY * 0.5}px) translateX(${mouseX * 0.3}px)`;
+    const mouseX = (e.clientX / window.innerWidth) * 6 - 3;
+    const mouseY = (e.clientY / window.innerHeight) * 6 - 3;
+    phoneMockup.style.transform = `perspective(1200px) rotateY(${-5 + mouseX * 0.5}deg) rotateX(${2 + mouseY * 0.3}deg)`;
+  });
+
+  // Reset on mouse leave
+  document.addEventListener('mouseleave', () => {
+    phoneMockup.style.transform = '';
   });
 }
 
