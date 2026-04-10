@@ -1149,6 +1149,15 @@ section#trending {
   color: var(--color-charcoal);
 }
 
+.trending-chip .chip-img {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #e0e0e0;
+}
+
 .trending-chip svg {
   flex-shrink: 0;
   color: var(--color-green-light);
