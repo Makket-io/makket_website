@@ -1149,12 +1149,21 @@ section#trending {
   color: var(--color-charcoal);
 }
 
+.trending-chip svg {
+  flex-shrink: 0;
+  color: var(--color-green-light);
+}
+
 .trending-chip:hover {
   border-color: var(--color-deep-green);
   background-color: var(--color-green-pale);
   color: var(--color-deep-green);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+.trending-chip:hover svg {
+  color: var(--color-deep-green);
 }
 
 /* ================================================================
