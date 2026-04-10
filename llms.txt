@@ -1,0 +1,43 @@
+# MAKKET
+
+> The digital discovery and trust platform for Nigeria's 150+ physical markets. MAKKET helps buyers search products, find verified sellers, and pay safely. Launching 2026 in Lagos, Abuja, and Port Harcourt.
+
+## Quick facts
+
+- Name: MAKKET
+- Website: https://www.makket.io/
+- Founded: 2026
+- Founder: Alex Nwoko
+- HQ: Lagos, Nigeria
+- Stage: Pre-MVP (active build, April 2026)
+- Launch cities: Lagos, Abuja, Port Harcourt
+- Markets mapped: over 150
+- Tagline: "The heartbeat of every market, right in your pocket."
+- Categories: Food & Groceries, Fabrics & Textiles, Electronics & Gadgets, Fashion & Clothing, Auto & Spare Parts, Building & Construction, Home & Appliances, Beauty & Personal Care, Leather & Craft, Agriculture & Farm, Industrial & Machinery, Stationery & Printing
+- Contact: hello@makket.io
+- LinkedIn: https://www.linkedin.com/company/makket-hq
+- GitHub: https://github.com/Makket-io
+
+## What MAKKET is
+
+MAKKET is the digital discovery and trust layer for Nigerian physical markets. It maps individual stalls and traders inside Nigeria's open-air markets — Balogun, Mile 12, Alaba International, Computer Village, Wuse, Oil Mill and over 150 others — and makes them searchable from any phone. Each seller goes through a 3-tier verification process (Listed → Verified → Premium). Buyers search by product, see real prices, pay via escrow, and receive doorstep delivery.
+
+## What MAKKET is not
+
+MAKKET is not a classifieds board, and it is not a warehoused e-commerce marketplace. MAKKET's approach to marketplace design differs significantly from the pioneer-era Nigerian e-commerce models. It is a new category: the trust and discovery layer that connects buyers to sellers operating inside Nigeria's existing physical markets — without warehousing inventory or marking up prices.
+
+## Key documents
+
+- [About MAKKET](https://www.makket.io/)
+- [AI Fact Sheet](https://www.makket.io/ai)
+- [FAQ](https://www.makket.io/faq)
+
+## Cities served (launching 2026)
+
+- Lagos — Balogun Market, Mile 12, Alaba International, Computer Village, Ladipo, Trade Fair Complex
+- Abuja — Wuse, Utako, Garki
+- Port Harcourt — Oil Mill, Creek Road, Mile 1
+
+## Expansion (post-launch)
+
+Enugu, Ibadan, Abeokuta, Kano, Kaduna, Aba (Ariaria International), Onitsha (Onitsha Main), Owerri, Warri, Benin City, Asaba.
