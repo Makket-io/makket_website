@@ -20,6 +20,7 @@
   <meta name="twitter:title" content="MAKKET Blog — Insights on Nigerian Markets & Digital Commerce">
   <meta name="twitter:description" content="Read insights on Nigerian markets, digital commerce trends, and how MAKKET is building the trust layer for 300+ physical markets.">
 
+  <meta name="theme-color" content="#1B5E20">
   <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="192x192" href="/assets/apple-touch-icon.png">
@@ -56,57 +57,212 @@
   </script>
 
   <style>
-    body.blog-page { background: #fff; color: #212121; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.65; }
-    .blog-container { max-width: 820px; margin: 0 auto; padding: 48px 24px 96px; }
-    .blog-container h1 { font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.15; margin: 0 0 8px; color: #1B5E20; }
-    .blog-container .blog-sub { color: #555; font-size: 1.05rem; margin: 0 0 40px; }
-    .blog-back { display: inline-block; margin-bottom: 32px; color: #1B5E20; text-decoration: none; font-weight: 600; }
-    .blog-back:hover { text-decoration: underline; }
-    .blog-card { display: block; text-decoration: none; color: inherit; background: #f5f7f5; border-radius: 12px; padding: 28px 28px 24px; transition: box-shadow 0.2s ease, transform 0.15s ease; }
-    .blog-card:hover { box-shadow: 0 4px 20px rgba(27, 94, 32, 0.1); transform: translateY(-2px); }
-    .blog-card-title { font-size: 1.35rem; font-weight: 700; color: #1B5E20; margin: 0 0 8px; line-height: 1.3; }
-    .blog-card-meta { font-size: 0.85rem; color: #777; margin: 0 0 12px; }
-    .blog-card-excerpt { font-size: 0.95rem; color: #444; margin: 0 0 16px; line-height: 1.6; }
-    .blog-card-link { font-size: 0.9rem; font-weight: 600; color: #3E9C91; text-decoration: none; }
-    .blog-card-link:hover { text-decoration: underline; }
+    /* ===== Blog listing page styles ===== */
+    .blog-hero { background: linear-gradient(135deg, #f0f7f0 0%, #e8f5e9 50%, #f5f7f5 100%); padding: 80px 0 60px; border-bottom: 1px solid #e0ede0; }
+    .blog-hero .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    .blog-hero h1 { font-size: clamp(2.2rem, 4.5vw, 3rem); line-height: 1.1; margin: 0 0 12px; color: #1B5E20; font-weight: 800; }
+    .blog-hero .blog-sub { color: #1B5E20; font-size: 1.18rem; font-weight: 700; margin: 0; line-height: 1.5; }
+
+    .blog-section { max-width: 1080px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    /* Grid layout */
+    .blog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    @media (max-width: 700px) { .blog-grid { grid-template-columns: 1fr; gap: 20px; } }
+
+    /* Featured card — spans full width */
+    .blog-card-featured { grid-column: 1 / -1; display: flex; text-decoration: none; color: inherit; background: #fff; border-radius: 16px; overflow: hidden; transition: box-shadow 0.25s ease, transform 0.15s ease; border: 1px solid #e0ede0; box-shadow: 0 2px 12px rgba(27, 94, 32, 0.06); }
+    .blog-card-featured:hover { box-shadow: 0 8px 32px rgba(27, 94, 32, 0.12); transform: translateY(-3px); }
+    .blog-card-featured .blog-card-accent { width: 6px; min-height: 100%; background: linear-gradient(180deg, #3E9C91, #1B5E20); flex-shrink: 0; }
+    .blog-card-featured .blog-card-body { padding: 36px 36px 32px; flex: 1; }
+    .blog-card-featured .blog-card-tag { display: inline-block; font-size: 0.65rem; font-weight: 700; color: #fff; background: #3E9C91; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.6px; }
+    .blog-card-featured .blog-card-title { font-size: 1.5rem; font-weight: 800; color: #1B5E20; margin: 0 0 10px; line-height: 1.25; }
+    .blog-card-featured .blog-card-meta { font-size: 0.8rem; color: #999; margin: 0 0 16px; }
+    .blog-card-featured .blog-card-excerpt { font-size: 0.92rem; color: #444; margin: 0 0 20px; line-height: 1.65; }
+    .blog-card-featured .blog-card-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 700; color: #3E9C91; text-decoration: none; transition: gap 0.2s ease; }
+    .blog-card-featured .blog-card-link:hover { gap: 10px; }
+    @media (max-width: 700px) {
+      .blog-card-featured .blog-card-body { padding: 24px 20px 22px; }
+      .blog-card-featured .blog-card-title { font-size: 1.2rem; }
+    }
+
+    /* Standard cards */
+    .blog-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; background: #fff; border-radius: 14px; padding: 28px 26px 24px; transition: box-shadow 0.25s ease, transform 0.15s ease; border: 1px solid #e8efe8; box-shadow: 0 1px 6px rgba(27, 94, 32, 0.04); }
+    .blog-card:hover { box-shadow: 0 6px 24px rgba(27, 94, 32, 0.1); transform: translateY(-3px); border-color: #d0e0d0; }
+    .blog-card .blog-card-tag { display: inline-block; font-size: 0.62rem; font-weight: 700; color: #3E9C91; background: #e8f5e9; padding: 4px 11px; border-radius: 20px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.6px; align-self: flex-start; }
+    .blog-card .blog-card-title { font-size: 1.1rem; font-weight: 700; color: #1B5E20; margin: 0 0 8px; line-height: 1.3; }
+    .blog-card .blog-card-meta { font-size: 0.76rem; color: #999; margin: 0 0 14px; }
+    .blog-card .blog-card-excerpt { font-size: 0.85rem; color: #555; margin: 0 0 20px; line-height: 1.65; flex: 1; }
+    .blog-card .blog-card-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: #3E9C91; text-decoration: none; margin-top: auto; transition: gap 0.2s ease; }
+    .blog-card .blog-card-link:hover { gap: 10px; }
   </style>
 </head>
-<body class="blog-page">
+<body>
 
-  <main class="blog-container">
-    <a href="/" class="blog-back">&larr; Back to MAKKET</a>
+  <!-- ====== HEADER (same as main site) ====== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="nav-logo" aria-label="MAKKET home">
+          <img src="/assets/MAKKET-Header-Teal-Transparent_logo.png" alt="MAKKET" height="144">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/#how-it-works">How It Works</a>
+          <a href="/#features">Features</a>
+          <a href="/#categories">Markets</a>
+          <a href="/for-sellers">For Sellers</a>
+          <a href="/blog" class="active">Blog</a>
+        </div>
+        <div class="nav-cta">
+          <a href="/#waitlist" class="btn btn-primary btn-sm">Get Early Access</a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    <h1>MAKKET Blog</h1>
-    <p class="blog-sub">Insights on Nigerian markets, digital commerce, and the future of trade.</p>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/#how-it-works">How It Works</a>
+    <a href="/#features">Features</a>
+    <a href="/#categories">Markets</a>
+    <a href="/for-sellers">For Sellers</a>
+    <a href="/blog">Blog</a>
+    <a href="/#waitlist" class="btn btn-primary" style="text-align:center;margin-top:8px;">Get Early Access</a>
+  </div>
 
-    <a href="/blog/makket-the-afcfta-multiplier/" class="blog-card">
-      <h2 class="blog-card-title">MAKKET — The AfCFTA Multiplier: Enabling the Production-to-Retail Value Chain for 1.3 Billion People</h2>
-      <p class="blog-card-meta">March 22, 2026 &middot; Alex Nwoko &middot; 14 min read</p>
-      <p class="blog-card-excerpt">The AfCFTA created the world's largest free trade area &mdash; 1.3 billion people, $3.4 trillion GDP. But without digital infrastructure connecting traders across 54 countries, the gains remain theoretical. MAKKET builds the missing layer.</p>
-      <span class="blog-card-link">Read more &rarr;</span>
-    </a>
+  <!-- ====== BLOG HERO ====== -->
+  <section class="blog-hero">
+    <div class="container">
+      <h1>MAKKET Blog</h1>
+      <p class="blog-sub">Insights on Nigerian markets, digital commerce, and the future of digital trade.</p>
+    </div>
+  </section>
 
-    <a href="/blog/trillion-dollar-blind-spot-digitizing-africa-informal-markets/" class="blog-card">
-      <h2 class="blog-card-title">The Trillion-Dollar Blind Spot: Digitizing Africa's Informal Markets</h2>
-      <p class="blog-card-meta">March 18, 2026 &middot; Alex Nwoko &middot; 12 min read</p>
-      <p class="blog-card-excerpt">Africa's informal markets generate 40&ndash;65% of GDP across the continent, yet remain invisible to the financial system. The economic case for digitization is worth hundreds of billions &mdash; here's how MAKKET is building the infrastructure.</p>
-      <span class="blog-card-link">Read more &rarr;</span>
-    </a>
+  <!-- ====== BLOG GRID ====== -->
+  <section class="blog-section">
+    <div class="blog-grid">
 
-    <a href="/blog/from-nigeria-to-africa-and-to-the-world/" class="blog-card">
-      <h2 class="blog-card-title">From Nigeria to Africa and to the World: Digitizing Open-Air Markets, One Market at a Time</h2>
-      <p class="blog-card-meta">March 14, 2026 &middot; Alex Nwoko &middot; 10 min read</p>
-      <p class="blog-card-excerpt">Africa's informal markets account for 97% of retail sales, yet almost none of it is digitally accessible. MAKKET is starting in Nigeria's 300+ markets and building outward &mdash; one market at a time.</p>
-      <span class="blog-card-link">Read more &rarr;</span>
-    </a>
+      <!-- Featured / Latest post -->
+      <a href="/blog/makket-the-afcfta-multiplier/" class="blog-card-featured">
+        <div class="blog-card-accent"></div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Latest</span>
+          <h2 class="blog-card-title">MAKKET &mdash; The AfCFTA Multiplier</h2>
+          <p class="blog-card-meta">March 22, 2026 &middot; Alex Nwoko &middot; 9 min read</p>
+          <p class="blog-card-excerpt">The AfCFTA created the world's largest free trade area &mdash; 1.3 billion people, $3.4 trillion GDP. But without digital infrastructure connecting traders across 54 countries, the gains remain theoretical. MAKKET builds the missing layer.</p>
+          <span class="blog-card-link">Read article <span>&rarr;</span></span>
+        </div>
+      </a>
 
-    <a href="/blog/why-nigerian-markets-going-digital-2026/" class="blog-card">
-      <h2 class="blog-card-title">Why Nigerian Markets Are Going Digital in 2026</h2>
-      <p class="blog-card-meta">March 10, 2026 &middot; Alex Nwoko &middot; 8 min read</p>
-      <p class="blog-card-excerpt">Nigeria's 300+ physical markets generate the majority of the country's retail commerce, yet almost none of it is searchable online. In 2026, that is changing &mdash; here's what's driving the shift and what it means for sellers and buyers.</p>
-      <span class="blog-card-link">Read more &rarr;</span>
-    </a>
-  </main>
+      <!-- Card 2 -->
+      <a href="/blog/trillion-dollar-blind-spot-digitizing-africa-informal-markets/" class="blog-card">
+        <span class="blog-card-tag">Economic Impact</span>
+        <h2 class="blog-card-title">The Trillion-Dollar Blind Spot: Digitizing Africa's Informal Markets</h2>
+        <p class="blog-card-meta">March 18, 2026 &middot; 9 min read</p>
+        <p class="blog-card-excerpt">Africa's informal markets generate 40&ndash;65% of GDP, yet remain invisible to the financial system. The economic case for digitization is worth hundreds of billions.</p>
+        <span class="blog-card-link">Read article <span>&rarr;</span></span>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="/blog/from-nigeria-to-africa-and-to-the-world/" class="blog-card">
+        <span class="blog-card-tag">Vision</span>
+        <h2 class="blog-card-title">From Nigeria to Africa and to the World</h2>
+        <p class="blog-card-meta">March 14, 2026 &middot; 8 min read</p>
+        <p class="blog-card-excerpt">Africa's informal markets account for 97% of retail sales, yet almost none of it is digitally accessible. MAKKET is starting in Nigeria and building outward.</p>
+        <span class="blog-card-link">Read article <span>&rarr;</span></span>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="/blog/why-nigerian-markets-going-digital-2026/" class="blog-card">
+        <span class="blog-card-tag">Market Insight</span>
+        <h2 class="blog-card-title">Why Nigerian Markets Are Going Digital in 2026</h2>
+        <p class="blog-card-meta">March 10, 2026 &middot; 8 min read</p>
+        <p class="blog-card-excerpt">Nigeria's 300+ physical markets generate the majority of retail commerce, yet almost none of it is searchable online. That is changing.</p>
+        <span class="blog-card-link">Read article <span>&rarr;</span></span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====== FOOTER (same as main site) ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="/assets/MAKKET-Footer-White-Transparent.png" alt="MAKKET" height="128">
+          </div>
+          <p>The digital discovery and trust layer for Africa's physical markets. Search products, find verified sellers, and shop smarter.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" aria-label="Twitter/X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="/#how-it-works">How It Works</a>
+          <a href="/#features">Features</a>
+          <a href="/#categories">Market Categories</a>
+          <a href="/#trust">Trust &amp; Safety</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="/about">About MAKKET</a>
+          <a href="/mission">Our Mission</a>
+          <a href="/careers">Careers</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="/help">Help Centre</a>
+          <a href="/seller-support">Seller Support</a>
+          <a href="/report">Report a Problem</a>
+          <a href="/faq">FAQs</a>
+          <a href="/for-sellers">For Sellers</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MAKKET. All rights reserved. Built in Nigeria, for Nigerian markets.</p>
+        <div class="footer-legal">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // Mobile menu toggle
+  const header = document.getElementById('header');
+  const mobileToggle = document.getElementById('mobileToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      const spans = mobileToggle.querySelectorAll('span');
+      if (mobileMenu.classList.contains('open')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = '';
+      }
+    });
+  }
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  });
+  </script>
 
 </body>
 </html>
