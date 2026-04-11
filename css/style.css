@@ -348,7 +348,7 @@ input, select, button {
 
 .btn-sm {
   padding: 0.5rem 1.1rem;
-  font-size: var(--font-size-small);
+  font-size: 0.95rem;
   white-space: nowrap;
 }
 .nav-cta {
@@ -401,7 +401,7 @@ input, select, button {
 }
 
 .nav-links a {
-  font-size: var(--font-size-small);
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-charcoal);
   padding: 0.5rem 0;
@@ -2034,7 +2034,6 @@ footer {
   height: 40px;
   width: auto;
   max-width: 250px;
-  margin: -5px 0 -5px -5%;
   display: block;
 }
 
@@ -2043,12 +2042,14 @@ footer {
   margin-bottom: var(--spacing-lg);
   font-size: var(--font-size-small);
   line-height: 1.7;
-  max-width: 280px;
+  max-width: 320px;
+  text-align: left;
 }
 
 .footer-social {
   display: flex;
   gap: var(--spacing-sm);
+  justify-content: flex-start;
 }
 
 .footer-social a {
