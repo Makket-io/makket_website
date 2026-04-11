@@ -347,8 +347,12 @@ input, select, button {
 }
 
 .btn-sm {
-  padding: 0.6rem 1.4rem;
+  padding: 0.5rem 1.1rem;
   font-size: var(--font-size-small);
+  white-space: nowrap;
+}
+.nav-cta {
+  margin-left: 3px;
 }
 
 .btn-lg {
@@ -387,8 +391,7 @@ input, select, button {
 .nav-logo img {
   height: 44px;
   width: auto;
-  max-width: 200px;
-  clip-path: inset(10% 10% 10% 10%);
+  max-width: 270px;
 }
 
 .nav-links {
@@ -2030,7 +2033,7 @@ footer {
 .footer-logo img {
   height: 40px;
   width: auto;
-  max-width: 180px;
+  max-width: 250px;
   margin: -5px 0 -5px -5%;
   display: block;
 }
