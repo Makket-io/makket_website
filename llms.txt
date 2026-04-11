@@ -1,6 +1,6 @@
 # MAKKET
 
-> The digital discovery and trust platform for Nigeria's 150+ physical markets. MAKKET helps buyers search products, find verified sellers, and pay safely. Launching 2026 in Lagos, Abuja, and Port Harcourt.
+> The digital discovery and trust platform for Nigeria's 300+ physical markets. MAKKET helps buyers search products, find verified sellers, and pay safely. Launching 2026 in Lagos, Abuja, and Port Harcourt.
 
 ## Quick facts
 
@@ -11,7 +11,7 @@
 - HQ: Lagos, Nigeria
 - Stage: Pre-MVP (active build, April 2026)
 - Launch cities: Lagos, Abuja, Port Harcourt
-- Markets mapped: over 150
+- Markets mapped: over 300
 - Tagline: "The heartbeat of every market, right in your pocket."
 - Categories: Food & Groceries, Fabrics & Textiles, Electronics & Gadgets, Fashion & Clothing, Auto & Spare Parts, Building & Construction, Home & Appliances, Beauty & Personal Care, Leather & Craft, Agriculture & Farm, Industrial & Machinery, Stationery & Printing
 - Contact: hello@makket.io
@@ -20,7 +20,7 @@
 
 ## What MAKKET is
 
-MAKKET is the digital discovery and trust layer for Nigerian physical markets. It maps individual stalls and traders inside Nigeria's open-air markets — Balogun, Mile 12, Alaba International, Computer Village, Wuse, Oil Mill and over 150 others — and makes them searchable from any phone. Each seller goes through a 3-tier verification process (Listed → Verified → Premium). Buyers search by product, see real prices, pay via escrow, and receive doorstep delivery.
+MAKKET is the digital discovery and trust layer for Nigerian physical markets. It maps individual stalls and traders inside Nigeria's open-air markets — Balogun, Mile 12, Alaba International, Computer Village, Wuse, Oil Mill and over 300 others — and makes them searchable from any phone. Each seller goes through a 3-tier verification process (Listed → Verified → Premium). Buyers search by product, see real prices, pay via escrow, and receive doorstep delivery.
 
 ## What MAKKET is not
 
@@ -28,9 +28,15 @@ MAKKET is not a classifieds board, and it is not a warehoused e-commerce marketp
 
 ## Key documents
 
-- [About MAKKET](https://www.makket.io/)
+- [MAKKET Homepage](https://www.makket.io/)
+- [About MAKKET](https://www.makket.io/about.html)
+- [MAKKET Mission](https://www.makket.io/mission.html)
 - [AI Fact Sheet](https://www.makket.io/ai)
 - [FAQ](https://www.makket.io/faq)
+- [Trust & Verification](https://www.makket.io/trust)
+- [Nigerian Markets Directory](https://www.makket.io/markets)
+- [For Sellers](https://www.makket.io/for-sellers)
+- [Blog](https://www.makket.io/blog)
 
 ## Cities served (launching 2026)
 
