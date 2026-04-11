@@ -74,7 +74,7 @@
 
   <style>
     body.blog-post-page { background: #fff; color: #212121; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.7; }
-    .post-container { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+    .post-container { max-width: 720px; margin: 0 auto; padding: 120px 24px 96px; }
     .post-breadcrumb { font-size: 0.81rem; color: #777; margin-bottom: 32px; }
     .post-breadcrumb a { color: #1B5E20; text-decoration: none; font-weight: 500; }
     .post-breadcrumb a:hover { text-decoration: underline; }
@@ -103,6 +103,38 @@
   </style>
 </head>
 <body class="blog-post-page">
+
+  <!-- ====== HEADER (same as main site) ====== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="nav-logo" aria-label="MAKKET home">
+          <img src="/assets/MAKKET-Header-Teal-Transparent_logo.png" alt="MAKKET" height="44">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="/about">About MAKKET</a>
+          <a href="/#how-it-works">How It Works</a>
+          <a href="/#features">Features</a>
+          <a href="/#markets">Markets</a>
+          <a href="/for-sellers">For Sellers</a>
+          <a href="/blog">Blog</a>
+        </div>
+        <a href="/#waitlist" class="btn btn-primary btn-sm nav-cta">Get Early Access</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/about">About MAKKET</a>
+    <a href="/#how-it-works">How It Works</a>
+    <a href="/#features">Features</a>
+    <a href="/#markets">Markets</a>
+    <a href="/for-sellers">For Sellers</a>
+    <a href="/blog">Blog</a>
+    <a href="/#waitlist" class="btn btn-primary" style="margin-top: 1rem; text-align: center;">Get Early Access</a>
+  </div>
 
   <main class="post-container">
     <nav class="post-breadcrumb" aria-label="Breadcrumb">
@@ -295,5 +327,19 @@
     <a href="/blog" class="post-back">&larr; Back to Blog</a>
   </main>
 
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+      });
+    }
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (header) header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
 </body>
 </html>
