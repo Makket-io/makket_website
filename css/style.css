@@ -22,11 +22,11 @@
 
   /* Typography */
   --font-primary: "Plus Jakarta Sans", sans-serif;
-  --font-size-h1: 3.25rem;
-  --font-size-h2: 2.25rem;
-  --font-size-h3: 1.6rem;
-  --font-size-body: 1rem;
-  --font-size-small: 0.875rem;
+  --font-size-h1: 3.375rem;
+  --font-size-h2: 2.375rem;
+  --font-size-h3: 1.725rem;
+  --font-size-body: 1.0625rem;
+  --font-size-small: 0.9375rem;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -123,7 +123,7 @@ input, select, button {
    ================================================================ */
 
 .container {
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
 }
