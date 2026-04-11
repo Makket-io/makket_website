@@ -389,9 +389,9 @@ input, select, button {
 }
 
 .nav-logo img {
-  height: 44px;
+  height: 40px;
   width: auto;
-  max-width: 270px;
+  max-width: 240px;
 }
 
 .nav-links {
