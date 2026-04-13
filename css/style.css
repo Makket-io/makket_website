@@ -3163,16 +3163,17 @@ footer {
   }
 
   .step-number {
-    grid-row: 1 / 3;
-    grid-column: 1;
-    margin: 0;
-    width: 44px;
-    height: 44px;
-    align-self: center;
+    display: none;
   }
 
   .step-card .step-icon {
-    display: none;
+    grid-row: 1 / 3;
+    grid-column: 1;
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    align-self: center;
+    background: rgba(62, 156, 145, 0.1);
   }
 
   .step-card h3 {
