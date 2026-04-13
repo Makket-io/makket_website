@@ -3109,7 +3109,53 @@ footer {
   }
 
   .steps-grid::before {
+    /* Vertical connecting line on mobile */
+    top: 24px;
+    bottom: 24px;
+    left: 24px;
+    right: auto;
+    width: 3px;
+    height: auto;
+    background: linear-gradient(180deg, var(--color-deep-green) 0%, var(--color-warm-orange) 100%);
+  }
+
+  .steps-grid.steps-5 {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .step-card {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: var(--spacing-md);
+    text-align: left;
+    padding: 0;
+  }
+
+  .step-number {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    align-self: start;
+  }
+
+  .step-card .step-icon {
     display: none;
+  }
+
+  .step-card h3 {
+    grid-column: 2;
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+  }
+
+  .step-card p {
+    grid-column: 2;
+    font-size: 0.88rem;
+    line-height: 1.6;
   }
 
   .trust-tier.featured-tier {
