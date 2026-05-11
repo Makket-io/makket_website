@@ -385,7 +385,7 @@ input, select, button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 96px;
+  height: 77px;
 }
 
 .nav-logo img {
