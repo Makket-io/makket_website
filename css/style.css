@@ -811,7 +811,7 @@ section#hero {
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: 1.5px;
-  padding: 10px 0 8px;
+  padding: 2px 0 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -819,7 +819,7 @@ section#hero {
 }
 
 .phone-logo img {
-  height: 33px;
+  height: 23px;
   width: auto;
   display: block;
 }
@@ -828,12 +828,12 @@ section#hero {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin: 0 12px 12px;
-  padding: 7px 12px;
+  margin: 4px 12px 8px;
+  padding: 6px 12px;
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   backdrop-filter: blur(4px);
 }
 
@@ -876,21 +876,21 @@ section#hero {
 }
 
 .phone-section-title {
-  font-size: 0.72rem;
+  font-size: 0.66rem;
   font-weight: 700;
   color: var(--color-charcoal);
-  padding: 8px 12px 4px;
+  padding: 6px 12px 2px;
   margin: 0;
 }
 
 .phone-vendor-card {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  margin: 3px 10px;
+  gap: 7px;
+  padding: 5px 10px;
+  margin: 2px 10px;
   background-color: #f8f9fa;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .phone-vendor-card:first-of-type {
@@ -899,16 +899,16 @@ section#hero {
 }
 
 .vendor-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
   background: linear-gradient(135deg, var(--color-deep-green), #2e7d32);
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: 700;
 }
 
@@ -918,7 +918,7 @@ section#hero {
 }
 
 .vendor-info h5 {
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   font-weight: 700;
   margin: 0 0 1px;
   color: var(--color-charcoal);
@@ -928,13 +928,13 @@ section#hero {
 }
 
 .vendor-market {
-  font-size: 0.58rem;
+  font-size: 0.52rem;
   color: #888;
   margin-bottom: 1px;
 }
 
 .vendor-rating {
-  font-size: 0.56rem;
+  font-size: 0.5rem;
   color: #FFB300;
 }
 
