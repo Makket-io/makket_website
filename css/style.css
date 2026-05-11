@@ -2070,12 +2070,13 @@ footer {
 
 .footer-logo {
   margin-bottom: 0;
+  margin-left: -30px;
 }
 
 .footer-logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
-  max-width: 250px;
+  max-width: 375px;
   display: block;
 }
 
