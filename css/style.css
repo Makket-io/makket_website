@@ -1146,10 +1146,10 @@ section#trending {
 }
 
 .trending-chip {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.25rem;
+  gap: 0.6rem;
+  padding: 0.35rem 1.25rem 0.35rem 0.35rem;
   background-color: #fff;
   border: 1.5px solid #e0e0e0;
   border-radius: var(--radius-full);
@@ -1162,30 +1162,35 @@ section#trending {
   color: var(--color-charcoal);
 }
 
-.trending-chip .chip-img {
+.trending-chip .chip-icon {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 1.5px solid #e0e0e0;
+  background-color: var(--color-green-pale);
+  color: var(--color-deep-green);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
 }
 
-.trending-chip svg {
-  flex-shrink: 0;
-  color: var(--color-green-light);
+.trending-chip .chip-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 .trending-chip:hover {
   border-color: var(--color-deep-green);
-  background-color: var(--color-green-pale);
+  background-color: #fff;
   color: var(--color-deep-green);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
-.trending-chip:hover svg {
-  color: var(--color-deep-green);
+.trending-chip:hover .chip-icon {
+  background-color: var(--color-deep-green);
+  color: #fff;
 }
 
 /* ================================================================
